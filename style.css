@@ -40,3 +40,7 @@ body {
     color: white;
     padding-left: 10px;
 }
+
+#a-titles {
+    text-decoration: none;
+}

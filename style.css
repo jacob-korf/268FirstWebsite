@@ -14,7 +14,6 @@
 
 #inactive-link {
     flex-shrink: 0;
-    flex-basis: 300px;
     background-color: grey;
     border: 1px solid white;
     text-align: center;

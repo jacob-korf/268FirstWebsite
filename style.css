@@ -15,7 +15,7 @@
 
 #inactive-link {
     background-color: grey;
-    border-right: 1px solid white;
+    border: 1px solid white;
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
@@ -24,7 +24,7 @@
 #active-link {
     background-color: darkgrey;
     text-align: center;
-    border-right: 1px solid white;
+    border: 1px solid white;
     padding-right: 20px;
     padding-left: 20px;
 }
@@ -71,4 +71,68 @@ body {
     margin-left: 10px;
     padding: 2px;
     border: 1px solid cornflowerblue;
+}
+
+.form-style-1 {
+    max-width: 400px;
+    padding: 10px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+
+.form-style-1 label {
+    margin: 0 0 3px 0;
+    padding: 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-style-1 input[type=text],
+.form-style-1 input[type=email],
+textarea,
+select {
+    box-sizing: border-box;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    margin: 0px;
+    outline: none;
+}
+
+.form-style-1 input[type=text]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus,
+.form-style-1 select:focus {
+    box-shadow: 0 0 8px lightblue;
+    border: 1px solid lightblue;
+}
+
+.form-style-1 .field-divided {
+    width: 49%;
+}
+
+.form-style-1 .field-long {
+    width: 100%;
+}
+
+.form-style-1 .field-textarea {
+    height: 100px;
+}
+
+.form-style-1 input[type=submit],
+.form-style-1 input[type=button] {
+    background: grey;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    color: white;
+}
+
+.form-style-1 input[type=submit]:hover,
+.form-style-1 input[type=button]:hover {
+    background: darkgrey;
 }

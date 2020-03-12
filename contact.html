@@ -38,12 +38,22 @@
     <div>
 
         <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value=""><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br>
-            <label for="email">Email Address:</label><br>
-            <input type="text" id="email" name="email" value="">
+            <ul class="form-style-1">
+                <li>
+                    <label>First and Last Name </label>
+                    <input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                <li>
+                    <label>Email </label>
+                    <input type="email" name="field2" class="field-long" />
+                </li>
+                <li>
+                    <label>Your Message/Reason for Contacting </label>
+                    <textarea name="field3" id="field3" class="field-long field-textarea"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="Submit" />
+                </li>
+            </ul>
         </form>
     </div>
 </body>

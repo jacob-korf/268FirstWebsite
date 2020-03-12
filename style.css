@@ -53,11 +53,7 @@ body {
     align-self: flex-start;
     flex: 1 1 auto;
     padding: 10px;
-}
-
-#youtube {
-    width: 100%;
-    height: 100%;
+    border-bottom: 1px solid cornflowerblue;
 }
 
 #img-div {
@@ -134,4 +130,40 @@ select {
 .form-style-1 input[type=submit]:hover,
 .form-style-1 input[type=button]:hover {
     background: darkgrey;
+}
+
+#blogimg {
+    max-height: 400px;
+    max-width: 80%;
+}
+
+@media (max-width: 600px) {
+    #root {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #link-box {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        flex-basis: auto;
+        background-color: grey;
+    }
+    #container {
+        display: flex;
+        align-self: stretch;
+        flex: 1 1 auto;
+        padding: 10px;
+        flex-direction: column;
+        border: 1px solid cornflowerblue;
+    }
+    #youtube {
+        padding-bottom: 10px;
+    }
+}
+
+#youtube {
+    padding-right: 10px;
 }

@@ -154,6 +154,7 @@ select {
 
 .youtube {
     padding-right: 10px;
+    border: 0px;
 }
 
 @media (max-width: 600px) {
@@ -182,6 +183,7 @@ select {
     .youtube {
         padding-bottom: 10px;
         max-width: 98%;
+        border: 0px;
     }
     #prof {
         max-width: 95%;

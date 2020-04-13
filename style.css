@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #link-box {
@@ -11,9 +12,10 @@
     flex-wrap: wrap;
     flex-basis: auto;
     background-color: grey;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#inactive-link {
+.inactive-link {
     background-color: grey;
     border: 1px solid white;
     text-align: center;
@@ -21,7 +23,7 @@
     padding-left: 20px;
 }
 
-#active-link {
+.active-link {
     background-color: darkgrey;
     text-align: center;
     border: 1px solid white;
@@ -36,6 +38,7 @@ body {
 
 body {
     margin: 0;
+    font-family: Arial;
 }
 
 #title-box {
@@ -44,27 +47,20 @@ body {
     background-color: black;
 }
 
-#a-titles {
-    text-decoration: none;
-}
-
-#container {
+.container {
     display: flex;
     align-self: flex-start;
     flex: 1 1 auto;
     padding: 10px;
     border-bottom: 1px solid cornflowerblue;
+    font-style: normal;
 }
 
-#img-div {
-    padding: 10px;
-}
-
-#card {
+.card {
     background-color: white;
     margin-top: 20px;
     margin-left: 10px;
-    padding: 2px;
+    padding: 10px;
     border: 1px solid cornflowerblue;
 }
 
@@ -132,9 +128,13 @@ select {
     background: darkgrey;
 }
 
-#blogimg {
+.blogimg {
     max-height: 400px;
     max-width: 80%;
+}
+
+.youtube {
+    padding-right: 10px;
 }
 
 @media (max-width: 600px) {
@@ -151,19 +151,17 @@ select {
         flex-basis: auto;
         background-color: grey;
     }
-    #container {
+    .container {
         display: flex;
         align-self: stretch;
         flex: 1 1 auto;
         padding: 10px;
         flex-direction: column;
+        max-width: 98%;
         border: 1px solid cornflowerblue;
     }
-    #youtube {
+    .youtube {
         padding-bottom: 10px;
+        max-width: 96%;
     }
-}
-
-#youtube {
-    padding-right: 10px;
 }

@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="running-favicon.png" />
 </head>
 
 <body>
@@ -12,22 +13,22 @@
             <h1>IDIS 131: Distance Running</h1>
         </div>
         <div id="link-box">
-            <div id="inactive-link" onclick="location.href='index.html';" style="cursor: pointer;">
+            <div class="inactive-link" onclick="location.href='index.html';" style="cursor: pointer;">
                 <h2>Welcome</h2>
             </div>
-            <div id="inactive-link" onclick="location.href='training-document.html';" style="cursor: pointer;">
+            <div class="inactive-link" onclick="location.href='training-document.html';" style="cursor: pointer;">
                 <h2>Running Blog</h2>
             </div>
-            <div id="inactive-link" onclick="location.href='running-form.html';" style="cursor: pointer;">
+            <div class="inactive-link" onclick="location.href='running-form.html';" style="cursor: pointer;">
                 <h2>Running Form</h2>
             </div>
 
-            <div id="inactive-link" onclick="location.href='yoga.html';" style="cursor: pointer;">
+            <div class="inactive-link" onclick="location.href='yoga.html';" style="cursor: pointer;">
                 <h2>Yoga and Stretching</h2>
             </div>
 
 
-            <div id="active-link">
+            <div class="active-link">
                 <h2>Contact Us</h2>
             </div>
 
@@ -37,11 +38,11 @@
     </div>
     <div>
 
-        <form>
+        <form action="mailto:korfj921921@gmail.com" method="post" enctype="text/plain">
             <ul class="form-style-1">
                 <li>
-                    <label>First and Last Name </label>
-                    <input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                    <label for="field1">First and Last Name </label>
+                    <input id="field1" type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
                 <li>
                     <label>Email </label>
                     <input type="email" name="field2" class="field-long" />

@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../javascript/java.js"></script>
     <link rel="shortcut icon" href="running-favicon.png" />
 </head>
 
@@ -13,10 +14,10 @@
             <h1>IDIS 131: Distance Running</h1>
         </div>
         <div id="link-box">
-            <div class="inactive-link" onclick="location.href='index.html';" style="cursor: pointer;">
+            <div class="inactive-link" onclick="location.href='../index.html';" style="cursor: pointer;">
                 <h2>Welcome</h2>
             </div>
-            <div class="inactive-link" onclick="location.href='training-document.html';" style="cursor: pointer;">
+            <div class="inactive-link" onclick="location.href='running-blog.html';" style="cursor: pointer;">
                 <h2>Running Blog</h2>
             </div>
             <div class="inactive-link" onclick="location.href='running-form.html';" style="cursor: pointer;">
@@ -36,26 +37,29 @@
 
 
     </div>
-    <div>
 
-        <form action="mailto:korfj921921@gmail.com" method="post" enctype="text/plain">
-            <ul class="form-style-1">
-                <li>
-                    <label for="field1">First and Last Name </label>
-                    <input id="field1" type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
-                <li>
-                    <label>Email </label>
-                    <input type="email" name="field2" class="field-long" />
-                </li>
-                <li>
-                    <label>Your Message/Reason for Contacting </label>
-                    <textarea name="field3" id="field3" class="field-long field-textarea"></textarea>
-                </li>
-                <li>
-                    <input type="submit" value="Submit" />
-                </li>
-            </ul>
-        </form>
+    <div class="trans">
+        <div>
+
+            <form>
+                <ul class="form-style-1">
+                    <li>
+                        <label for="field1">First and Last Name </label>
+                        <input id="first" type="text" name="first" class="field-divided" placeholder="First" /> <input id="last" type="text" name="last" class="field-divided" placeholder="Last" /></li>
+                    <li>
+                        <label>Email </label>
+                        <input id="email" type="text" name="email" class="field-long" />
+                    </li>
+                    <li>
+                        <label>Your Message/Reason for Contacting </label>
+                        <textarea name="message" id="message" class="field-long field-textarea"></textarea>
+                    </li>
+                    <li>
+                        <input type="button" value="Submit" onclick="formClick()" />
+                    </li>
+                </ul>
+            </form>
+        </div>
     </div>
 </body>
 
